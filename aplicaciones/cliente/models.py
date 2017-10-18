@@ -9,11 +9,10 @@ from django.db import models
 class CLIENTCREATE(models.Model):
     NAME =models.CharField(max_length=50)
     SURNAMES = models.CharField(max_length=80)
+    EDAD = models.IntegerField()
     GENDER = (
         ('M', 'MASCULINO'),
         ('F', 'FEMENINO'),
         ('O', 'OTROS'),
     )
     TYPE_GENDER = models.CharField(max_length=1, choices=GENDER)
-    EDAD = models.IntegerField
-    

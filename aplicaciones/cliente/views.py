@@ -10,7 +10,7 @@ from aplicaciones.cliente.forms import CLIENTFORM
 
 class CLIENT(CreateView):
     model = CLIENTCREATE
-    template_name = 'cliente/cliente_form.html'
     form = CLIENTFORM
+    template_name = 'cliente/cliente_form.html'
 
 
