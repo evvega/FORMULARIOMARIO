@@ -6,13 +6,16 @@ from django.db import models
 
 # Create your models here.
 
-class CLIENTCREATE(models.Model):
-    NAME =models.CharField(max_length=50)
+class CLIENT(models.Model):
+    NAME = models.CharField(max_length=50)
     SURNAMES = models.CharField(max_length=80)
-    EDAD = models.IntegerField()
-    GENDER = (
-        ('M', 'MASCULINO'),
-        ('F', 'FEMENINO'),
-        ('O', 'OTROS'),
-    )
-    TYPE_GENDER = models.CharField(max_length=1, choices=GENDER)
+    AGE = models.IntegerField()
+    GENDER = (  ('M', 'Masculino'), ('F', 'Femenino'),  ('O', 'Otros'), )
+    TYPE_GENDER = models.TextField(max_length=1, choices=GENDER)
+    EMAIL = models.CharField(max_length=80)
+    PHONE = models.IntegerField()
+    CITY = models.CharField(max_length=80)
+    SOCIOECONOMIC_LEVEL = models.IntegerField()
+    TICKET= models.IntegerField()
+
+

@@ -1,10 +1,10 @@
 from django.conf.urls import url,include
-from aplicaciones.cliente.views import CLIENT
+from aplicaciones.cliente.views import CLIENT_CREATE
 
 
 urlpatterns = [
 
-    url(r'^cliente/formulario',CLIENT.as_view(),name='cliente_formulario'),
+    url(r'^registrar',CLIENT_CREATE.as_view(),name='cliente_registrar'),
 
 
 ]
