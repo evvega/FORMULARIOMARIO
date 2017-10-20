@@ -12,5 +12,5 @@ class ENTERPRISE(models.Model):
     EMAIL = models.IntegerField()
     CITY = (('BOGOTA', 'Bogotá'), ('MEDELLIN', 'Medellin'), ('BARRANQUILLA', 'Barranquilla'), ('CALI', 'Cali'),
             ('CARTAGEA_DE_INDIAS', 'Cartagena de indias'))
-    TYPE_CITY = models.TextField(max_length=1, choices=CITY)
+    TYPE_CITY_COMPANY = models.TextField(max_length=1, choices=CITY)
     ADDRESS = models.CharField(max_length=80)

@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 from django.views.generic import CreateView,UpdateView,ListView,DeleteView
-from aplicaciones.cliente.models import CLIENT
+from aplicaciones.cliente.models import CLIENT,ADDINFORMATION
 from aplicaciones.cliente.forms import CLIENTFORM,ADDINFORMATIONFORM
 from django.http import HttpResponseRedirect,HttpResponse
 from django.core.urlresolvers import reverse_lazy
@@ -11,11 +11,12 @@ from django.core.urlresolvers import reverse_lazy
 # Create your views here.
 
 class CLIENT_CREATE(CreateView):
-    model = CLIENT
-    form_class = CLIENTFORM
-    second_form_class = ADDINFORMATIONFORM
-    template_name = 'clientesito/cliente_form.html'
+    model = ADDINFORMATION
+    form_class = ADDINFORMATIONFORM
+    second_form_class = CLIENTFORM
+    template_name = 'cliente/cliente_form.html'
     success_url = reverse_lazy('cliente:cliente_registrar')
+    paginate_by = 6
 
 
     def get_context_data(self, **kwargs):
@@ -32,7 +33,7 @@ class CLIENT_CREATE(CreateView):
         form2 =self.second_form_class(self.request.POST)
         if form.is_valid() and form2.is_valid():
             registro = form.save(commit=False)
-            registro.client = form2.save()
+            registro.client1 = form2.save()
             registro.save()
             return HttpResponseRedirect(self.get_success_url())
         else:
