@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="empresa_form.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/empresa/empresa_form.html">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/empresa/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,9 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -101,6 +101,8 @@
         <option value="$PROJECT_DIR$/templates/clientesito/cliente_form.html" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/templates/empresa/empresa_form.html" />
+        <option value="$PROJECT_DIR$/empresa/migrations/forms.py" />
+        <option value="$PROJECT_DIR$/empresa/forms.py" />
       </list>
     </option>
   </component>
@@ -139,22 +141,6 @@
             <path>
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicaciones" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="empresa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,9 +214,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12575758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19393939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833335" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.50569105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -444,6 +429,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/empresa/migrations/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/empresa/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
