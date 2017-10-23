@@ -15,8 +15,8 @@ class CLIENT_CREATE(CreateView):
     form_class = ADDINFORMATIONFORM
     second_form_class = CLIENTFORM
     template_name = 'cliente/cliente_form.html'
-    success_url = reverse_lazy('cliente:cliente_registrar')
-    paginate_by = 6
+    success_url = reverse_lazy('cliente:cliente_listar')
+
 
 
     def get_context_data(self, **kwargs):

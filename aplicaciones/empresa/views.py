@@ -12,7 +12,7 @@ class ENTERPRISE_CREATE(CreateView):
     form_class = ADDINFORMATIONFORM
     second_form_class = ENTERPRISEFORM
     template_name = 'empresa/empresa_form.html'
-    success_url = reverse_lazy('empresa:empresa_registrar')
+    success_url = reverse_lazy('empresa:empresa_listar')
 
     def get_context_data(self, **kwargs):
         context = super(ENTERPRISE_CREATE, self).get_context_data(**kwargs)

@@ -7,7 +7,7 @@ from django.db import models
 
 class ENTERPRISE(models.Model):
     BUSSINES_NAME = models.CharField(max_length=50)
-    NIT = models.IntegerField()
+    NIT = models.CharField(max_length=50)
     PHONE = models.IntegerField()
     EMAIL = models.EmailField()
     CITY = (('BOGOTA', 'Bogotá'), ('MEDELLIN', 'Medellin'), ('BARRANQUILLA', 'Barranquilla'), ('CALI', 'Cali'),

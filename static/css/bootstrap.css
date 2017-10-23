@@ -3526,6 +3526,10 @@ tbody.collapse.in {
 .dropup,
 .dropdown {
   position: relative;
+    cursor: pointer;
+
+
+
 }
 .dropdown-toggle:focus {
   outline: 0;
@@ -3551,6 +3555,8 @@ tbody.collapse.in {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
+  display: inline-block;
+
 }
 .dropdown-menu.pull-right {
   right: 0;
