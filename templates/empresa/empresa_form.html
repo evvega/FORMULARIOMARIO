@@ -15,9 +15,9 @@
       <form class="container1">
 
             <div class="form-group">
-                  <label for="{{ form2.NAME.name }}" class="col-lg-2 control-label">{{ form2.NAME.label }}</label>
+                  <label for="{{ form2.BUSSINES_NAME.name }}" class="col-lg-2 control-label">{{ form2.BUSSINES_NAME.label }}</label>
                 <div class="col-lg-10">
-                {{ form2.NAME }}
+                {{ form2.BUSSINES_NAME}}
                 </div>
             </div>
 
@@ -33,9 +33,9 @@
         <br><br><br>
 
             <div class="form-group">
-              <label for="{{ form2.AGE.name }}" class="col-lg-2 control-label">{{ form2.AGE.label }}</label>
+              <label for="{{ form2.NIT.name }}" class="col-lg-2 control-label">{{ form2.NIT.label }}</label>
               <div class="col-lg-10">
-                {{ form2.AGE }}
+                {{ form2.NIT }}
               </div>
             </div>
 
@@ -44,9 +44,9 @@
 
 
             <div class="form-group">
-              <label for="{{ form2.TYPE_GENDER.name }}" class="col-lg-2 control-label">{{ form2.TYPE_GENDER.label }}</label>
+              <label for="{{ form2.PHONE.name }}" class="col-lg-2 control-label">{{ form2.PHONE.label }}</label>
               <div class="col-lg-10">
-                {{ form2.TYPE_GENDER }}
+                {{ form2.PHONE }}
               </div>
             </div>
 
@@ -63,9 +63,9 @@
           <br><br><br>
 
             <div class="form-group">
-              <label for="{{ form2.PHONE.name }}" class="col-lg-2 control-label">{{ form2.PHONE.label }}</label>
+              <label for="{{ form2.TYPE_CITY_COMPANY.name }}" class="col-lg-2 control-label">{{ form2.TYPE_CITY_COMPANY.label }}</label>
               <div class="col-lg-10">
-                {{ form2.PHONE }}
+                {{ form2.TYPE_CITY_COMPANY }}
               </div>
             </div>
 
@@ -73,28 +73,9 @@
 
 
             <div class="form-group">
-              <label for="{{ form2.TYPE_CITY.name }}" class="col-lg-2 control-label">{{ form2.TYPE_CITY.label }}</label>
+              <label for="{{ form2.ADDRESS.name }}" class="col-lg-2 control-label">{{ form2.ADDRESS.label }}</label>
               <div class="col-lg-10">
-                {{ form2.TYPE_CITY }}
-              </div>
-            </div>
-
-          <br><br><br>
-
-
-            <div class="form-group">
-              <label for="{{ form2.SOCIOECONOMIC_LEVEL.name }}" class="col-lg-2 control-label">{{ form2.SOCIOECONOMIC_LEVEL.label }}</label>
-              <div class="col-lg-10">
-                {{ form2.SOCIOECONOMIC_LEVEL }}
-              </div>
-            </div>
-
-          <br><br><br>
-
-            <div class="form-group">
-              <label for="{{ form2.TICKET.name }}" class="col-lg-2 control-label">{{ form2.TICKET.label }}</label>
-              <div class="col-lg-10">
-                {{ form2.TICKET }}
+                {{ form2.ADDRESS }}
               </div>
             </div>
 
@@ -154,3 +135,4 @@
 
 
 </form>
+{% endblock %}
