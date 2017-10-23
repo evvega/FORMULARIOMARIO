@@ -1,10 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base/base.html' %}
 
-</body>
-</html>
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+
+
+    <form class="form-horizontal">
+        <legend><font color="black" size="30" ><center> MARIO HERNANDEZ</center></font></legend>
+
+        <fieldset>
+
+      <form class="container1">
+
+            <div class="form-group">
+                  <label for="{{ form2.NAME.name }}" class="col-lg-2 control-label">{{ form2.NAME.label }}</label>
+                <div class="col-lg-10">
+                {{ form2.NAME }}
+                </div>
+            </div>
+
+        <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form2.SURNAMES.name }}" class="col-lg-2 control-label">{{ form2.SURNAMES.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.SURNAMES }}
+              </div>
+            </div>
+
+        <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form2.AGE.name }}" class="col-lg-2 control-label">{{ form2.AGE.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.AGE }}
+              </div>
+            </div>
+
+
+        <br><br><br>
+
+
+            <div class="form-group">
+              <label for="{{ form2.TYPE_GENDER.name }}" class="col-lg-2 control-label">{{ form2.TYPE_GENDER.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.TYPE_GENDER }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+
+            <div class="form-group">
+              <label for="{{ form2.EMAIL.name }}" class="col-lg-2 control-label">{{ form2.EMAIL.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.EMAIL }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form2.PHONE.name }}" class="col-lg-2 control-label">{{ form2.PHONE.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.PHONE }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+
+            <div class="form-group">
+              <label for="{{ form2.TYPE_CITY.name }}" class="col-lg-2 control-label">{{ form2.TYPE_CITY.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.TYPE_CITY }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+
+            <div class="form-group">
+              <label for="{{ form2.SOCIOECONOMIC_LEVEL.name }}" class="col-lg-2 control-label">{{ form2.SOCIOECONOMIC_LEVEL.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.SOCIOECONOMIC_LEVEL }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form2.TICKET.name }}" class="col-lg-2 control-label">{{ form2.TICKET.label }}</label>
+              <div class="col-lg-10">
+                {{ form2.TICKET }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form.TYPE_WAYTOPAY.name }}" class="col-lg-2 control-label">{{ form.TYPE_WAYTOPAY.label }}</label>
+              <div class="col-lg-10">
+                {{ form.TYPE_WAYTOPAY }}
+              </div>
+            </div>
+
+          <br><br><br>
+
+            <div class="form-group">
+              <label for="{{ form.TYPE_PRODUCTQUALIFICATION.name }}" class="col-lg-2 control-label">{{ form.TYPE_PRODUCTQUALIFICATION.label }}</label>
+              <div class="col-lg-10">
+                {{ form.TYPE_PRODUCTQUALIFICATION }}
+              </div>
+            </div>
+
+          <br><br><br>
+          <br>
+
+          <div class="form-group">
+              <label for="{{ form.TYPE_SERVICEQUALIFICATION.name }}" class="col-lg-2 control-label">{{ form.TYPE_SERVICEQUALIFICATION.label }}</label>
+              <div class="col-lg-10">
+                {{ form.TYPE_SERVICEQUALIFICATION }}
+              </div>
+          </div>
+
+          <br><br><br>
+<br><br><br>
+
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+
+      </form>
+      </fieldset>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</form>
