@@ -4004,6 +4004,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   padding: 10px 15px;
 }
+
+.nav >li >ul{
+  display: none;
+  position:absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+
+}
+
+.nav li > ul > li > ul {
+  right: -140px;
+  top: 0px;
+
+}
+
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
