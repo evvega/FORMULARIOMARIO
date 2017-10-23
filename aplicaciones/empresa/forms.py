@@ -13,15 +13,17 @@ class ENTERPRISEFORM(forms.ModelForm):
             'EMAIL',
             'TYPE_CITY_COMPANY',
             'ADDRESS',
+            'TICKET',
         ]
 
         labels = {
-            'BUSSINES_NAME':'Razón social:',
+            'BUSSINES_NAME':'Razon social: ',
             'NIT':'Nit:',
             'PHONE':'Telefono:',
             'EMAIL':'Email:',
             'TYPE_CITY_COMPANY':'Ciudad:',
-            'ADDRESS':'Dirección:',
+            'ADDRESS':'Direccion:',
+            'TICKET':'Ticket:',
 
         }
 
@@ -32,7 +34,7 @@ class ENTERPRISEFORM(forms.ModelForm):
             'EMAIL':forms.TextInput(attrs={'class':'form-control'}),
             'TYPE_CITY_COMPANY': forms.Select(attrs={'class':'form-control'}),
             'ADDRESS':forms.TextInput(attrs={'class':'form-control'}),
-
+            'TICKET':forms.TextInput(attrs={'class':'form-control'}),
         }
 
 

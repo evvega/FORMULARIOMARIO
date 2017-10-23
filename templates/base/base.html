@@ -17,16 +17,26 @@
                 <nav class="navbar navbar-inverse">
                   <div class="container-fluid">
                     <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                   </button>
                       <a class="navbar-brand" href="#"><img src="https://mariohernandez.vteximg.com.br/arquivos/loader.png?v=636329805360230000" alt="https://mariohernandez.vteximg.com.br/arquivos/loader.png?v=636329805360230000" class="transparent" width="100" height="80"></a>
 
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                       <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
+                        <li class="active"><a href="{% url 'empresa:empresa_registrar'  %}">Registro Empresa<span class="sr-only">(current)</span></a></li>
+                        <li><a href="{% url 'cliente:cliente_registrar'%}">Registro Cliente</a></li>
                         <li class="dropdown">
-
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Listas <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="{% url 'cliente:cliente_registrar' %}">Lista Informativa</a></li>
+                                <li><a href="{% url 'cliente:cliente_registrar' %}">Lista Cliente</a></li>
+                              </ul>
                         </li>
                       </ul>
                         <div class="form-group">
@@ -34,7 +44,7 @@
                         </div>
                       </form>
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
+                        <li><a href="https://www.mariohernandez.com.co/contacto">Contacto</a></li>
                       </ul>
                     </div>
                   </div>
@@ -61,6 +71,7 @@
           <div class="footer-copyright">
             <div class="container">
                 <center>© Todos los derechos reservados MARROQUINERA S.A. 2015</center>
+
             </div>
           </div>
 </footer>

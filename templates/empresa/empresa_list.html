@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+
+
+
+
+{% block content %}
+
+    <table class="table table-bordered">
+
+    <legend><font color="black" size="30" ><center> MARIO HERNANDEZ</center></font></legend>
+    <thead>
+    <tr>
+        <td>ID. </td>
+        <td>Forma de pago:</td>
+        <td>Calificacion Producto:</td>
+        <td>Calificacion Servicio:</td>
+        <td>Razón social:</td>
+        <td>No. Ticket:</td>
+        <td><center>ACCIONES</center></td>
+    </tr>
+
+    </thead>
+    <tbody>
+    {% if object_list %}
+
+    {% for ADDINFORMATION in object_list %}
+    <tr>
+        <td>{{ ADDINFORMATION.id }}</td>
+        <td>{{ ADDINFORMATION.TYPE_WAYTOPAY }}</td>
+        <td>{{ ADDINFORMATION.TYPE_PRODUCTQUALIFICATION}}</td>
+        <td>{{ ADDINFORMATION.TYPE_SERVICEQUALIFICATION}}</td>
+        <td>{{ ADDINFORMATION.client2.BUSSINES_NAME }}</td>
+        <td>{{ ADDINFORMATION.client2.TICKET}}</td>
+        <td>
+            <a class="btn btn-primary" href="#">Editar</a>
+            <a class="btn btn-danger" href="#">Eliminar</a>
+        </td>
+    </tr>
+    {% endfor %}
+
+
+
+
+    {% else %}
+        <h1>NO HAY REGISTROS DE CLIENTES</h1>
+    {% endif %}
+    </tbody>
+</table>
+
+
+
+
+
+{% endblock %}
+
+

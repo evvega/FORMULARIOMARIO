@@ -26,12 +26,14 @@ class CLIENT(models.Model):
 class ADDINFORMATION(models.Model):
     client1 = models.ForeignKey(CLIENT, null=True, blank=True)
 
-    WAY_TO_PAY =(('TCN','Tarjeta de Crédito Nacional'),('VS','Visa'),('MC','Mastercard'),('AE','American Express'),('DN','Diners'),('TD','Tarjetas Débito'),('CB','Consignación Bancaria'),('PB','Pagos via Baloto'),('EF','Efecty'))
-    TYPE_WAYTOPAY = models.TextField(max_length=1,choices=WAY_TO_PAY)
-    PRODUCT_QUALIFICATION = (('E','Excelente'),('P','Promedio'),('T','Terrible'))
-    TYPE_PRODUCTQUALIFICATION = models.TextField(max_length=1,choices=PRODUCT_QUALIFICATION)
-    SERVICE_QUALIFICATION = (('S','Satisfecho'),('N','Neutral'),('I','Insatisfecho'))
-    TYPE_SERVICEQUALIFICATION = models.TextField(max_length=1,choices=SERVICE_QUALIFICATION)
+    WAY_TO_PAY = (('TARJETADECREDITONACIONAL', 'Tarjeta de Crédito Nacional'), ('VISA', 'Visa'), ('MASTERCARD', 'Mastercard'),
+    ('AMERICANEXPRESS', 'American Express'), ('DINERS', 'Diners'), ('TARJETASDEBITO', 'Tarjetas Débito'),
+    ('CONSIGNACIONBANCARIA', 'Consignación Bancaria'), ('PAGOSVIABALOTO', 'Pagos via Baloto'), ('EFECTY', 'Efecty'))
+    TYPE_WAYTOPAY = models.TextField(max_length=1, choices=WAY_TO_PAY)
+    PRODUCT_QUALIFICATION = (('5', 'Excelente'), ('3', 'Promedio'), ('1', 'Terrible'))
+    TYPE_PRODUCTQUALIFICATION = models.TextField(max_length=1, choices=PRODUCT_QUALIFICATION)
+    SERVICE_QUALIFICATION = (('5', 'Satisfecho'), ('3', 'Neutral'), ('1', 'Insatisfecho'))
+    TYPE_SERVICEQUALIFICATION = models.TextField(max_length=1, choices=SERVICE_QUALIFICATION)
 
 
 

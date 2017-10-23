@@ -40,7 +40,9 @@ class CLIENT_CREATE(CreateView):
 
             return self.render_to_response(self.get_context_data(form=form,form2=form2))
 
-
+class CLIENTLIST(ListView):
+    model = ADDINFORMATION
+    template_name = 'cliente/cliente_list.html'
 
 
 

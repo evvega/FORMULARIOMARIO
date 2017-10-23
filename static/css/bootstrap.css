@@ -13,7 +13,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: Libre Baskerville;
+  font-family: "Italic", "Libre Baskerville";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -113,7 +113,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Italic", "Libre Baskerville";
   font-size: 1em;
 }
 button,
@@ -268,7 +268,7 @@ th {
   }
 }
 @font-face {
-  font-family: 'Libre Baskerville';
+  font-family: "Italic", "Libre Baskerville";
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
@@ -276,8 +276,7 @@ th {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Libre Baskerville';
-  font-style: normal;
+  font-family: "Italic", "Libre Baskerville";
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
@@ -1086,8 +1085,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Italic, "Libre Baskerville", Times, serif;
-  font-size: 15px;
+  font-family: Italic, "Libre Baskerville";
+  font-size: 13px;
   line-height: 1.42857143;
   color: #777777;
   background-color: #ffffff;
@@ -1189,7 +1188,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Italic", "Libre Baskerville", sans-serif;
+  font-family: "Italic", "Libre Baskerville";
   font-weight: 700;
   line-height: 1.1;
   color: #450005;
@@ -1537,7 +1536,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Italic", "Libre Baskerville";
 }
 code {
   padding: 2px 4px;
@@ -4344,7 +4343,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
-    position: static;
+    position: relative;
     float: none;
     width: auto;
     margin-top: 0;
@@ -5504,6 +5503,7 @@ button.list-group-item-danger.active:focus {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-radius: 4px;
+
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -6008,7 +6008,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Italic, "Libre Baskerville", Times, serif;
+  font-family: Italic, "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6126,7 +6126,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Italic, "Libre Baskerville", Times, serif;
+  font-family: Italic, "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6394,7 +6394,7 @@ button.close {
   width: 20px;
   height: 20px;
   line-height: 1;
-  font-family: Libre Baskerville;
+  font-family: "Italic", "Libre Baskerville";
 }
 .carousel-control .icon-prev:before {
   content: '\2039';
@@ -6770,8 +6770,8 @@ button.close {
   }
 }
 .navbar {
-  font-size: 18px;
-  font-family: "Italic", "Libre Baskerville", sans-serif;
+  font-size: 15px;
+  font-family: "Italic", "Libre Baskerville", times;
   font-weight: 700;
 }
 .navbar-default .badge {
@@ -6849,7 +6849,7 @@ button.close {
 .jumbotron h4,
 .jumbotron h5,
 .jumbotron h6 {
-  font-family: "Italic", "Libre Baskerville", sans-serif;
+  font-family: "Italic", "Libre Baskerville";
   font-weight: 700;
   color: #450005;
 }

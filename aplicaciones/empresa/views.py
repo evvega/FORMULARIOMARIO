@@ -13,7 +13,6 @@ class ENTERPRISE_CREATE(CreateView):
     second_form_class = ENTERPRISEFORM
     template_name = 'empresa/empresa_form.html'
     success_url = reverse_lazy('empresa:empresa_registrar')
-    paginate_by = 6
 
     def get_context_data(self, **kwargs):
         context = super(ENTERPRISE_CREATE, self).get_context_data(**kwargs)
@@ -29,7 +28,7 @@ class ENTERPRISE_CREATE(CreateView):
         form2 = self.second_form_class(self.request.POST)
         if form.is_valid() and form2.is_valid():
             registro = form.save(commit=False)
-            registro.client1 = form2.save()
+            registro.client2 = form2.save()
             registro.save()
             return HttpResponseRedirect(self.get_success_url())
         else:
@@ -37,3 +36,6 @@ class ENTERPRISE_CREATE(CreateView):
             return self.render_to_response(self.get_context_data(form=form, form2=form2))
 
 
+class ADDINFORMATIONLIST(ListView):
+    model = ADDINFORMATION
+    template_name = 'empresa/empresa_list.html'
