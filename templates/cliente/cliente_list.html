@@ -15,6 +15,7 @@
         <td>Calificacion Producto:</td>
         <td>Calificacion Servicio:</td>
         <td>Nombre y apellidos:</td>
+        <td>Nivel socioeconomico:</td>
         <td>No. Ticket:</td>
         <td><CENTER>ACCIONES</CENTER></td>
     </tr>
@@ -29,7 +30,8 @@
         <td>{{ ADDINFORMATION.TYPE_WAYTOPAY }}</td>
         <td>{{ ADDINFORMATION.TYPE_PRODUCTQUALIFICATION}}</td>
         <td>{{ ADDINFORMATION.TYPE_SERVICEQUALIFICATION}}</td>
-        <td>{{ ADDINFORMATION.client1.NAME }} {{ ADDINFORMATION.client1.SURNAMES }}</td>
+        <td>{{ ADDINFORMATION.client1.NAME }} {{ ADDINFORMATION.client1.SURNAMES }}
+        <td>{{ ADDINFORMATION.client1.SOCIOECONOMIC_LEVEL}}</td>
         <td>{{ ADDINFORMATION.client1.TICKET}}</td>
         <td>
             <a class="btn btn-primary" href="#">Editar</a>
