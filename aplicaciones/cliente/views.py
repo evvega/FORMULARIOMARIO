@@ -44,6 +44,41 @@ class CLIENTLIST(ListView):
     model = ADDINFORMATION
     template_name = 'cliente/cliente_list.html'
 
+class ClientUpdate(UpdateView):
+    model = ADDINFORMATION
+    second_model = CLIENT
+    template_name = 'cliente/cliente_form.html'
+    form_class= ADDINFORMATIONFORM
+    second_form_class= CLIENTFORM
+    success_url = reverse_lazy('cliente:cliente_listar')
 
 
+    def get_context_data(self, **kwargs):
+        context = super(ClientUpdate,self).get_context_data(**kwargs)
+        pk = self.kwargs.get('pk',0)
+        addinformation=self.model.objects.get(id=pk)
+        cliente= self.second_model.objects.get(id=addinformation.client1_id)
+        if 'form' not in context:
+            context['form']=self.form_class(instance=addinformation)
+        if 'form2' not in context:
+            context['form2']=self.second_form_class(instance=cliente)
+        context['id']=pk
+        return context
+    def post(self, request, *args, **kwargs):
+        self.object=self.get_object
+        id_addinformation= kwargs['pk']
+        addinformation=self.model.objects.get(id=id_addinformation)
+        cliente=self.second_model.objects.get(id=addinformation.client1_id)
+        form=self.form_class(request.POST, instance=addinformation)
+        form2 = self.second_form_class(request.POST, instance=cliente)
+        if form.is_valid() and form2.is_valid():
+            form.save()
+            form2.save()
+            return HttpResponseRedirect(self.get_success_url())
+        else:
+            return HttpResponseRedirect(self.get_success_url())
 
+class ClientDelete(DeleteView):
+
+    model = ADDINFORMATION
+    template_name ='cliente/cliente_delete.html'

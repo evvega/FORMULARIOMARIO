@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <h3>¿Desea eliminar la información de {{ object.client1.NAME}} {{ object.client1.SURNAMES}}?</h3>
+    <BUTTON class="btn btn-danger" type="submit">Si,ELIMINAR</BUTTON>
+    <a class="btn btn-default"  href="{% url 'cliente:cliente_listar' %}"> Cancelar </a>
+</form>
+
+
+{% endblock %}

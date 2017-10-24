@@ -34,8 +34,8 @@
         <td>{{ ADDINFORMATION.client1.SOCIOECONOMIC_LEVEL}}</td>
         <td>{{ ADDINFORMATION.client1.TICKET}}</td>
         <td>
-            <a class="btn btn-primary" href="#">Editar</a>
-            <a class="btn btn-danger" href="#">Eliminar</a>
+            <a class="btn btn-primary" href="{% url 'cliente:cliente_registrar' %}">Editar</a>
+            <a class="btn btn-danger" href="{% url 'cliente:cliente_eliminar' %}">Eliminar</a>
         </td>
     </tr>
     {% endfor %}
