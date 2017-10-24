@@ -39,3 +39,44 @@ class ENTERPRISE_CREATE(CreateView):
 class ADDINFORMATIONLIST(ListView):
     model = ADDINFORMATION
     template_name = 'empresa/empresa_list.html'
+
+
+class EnterpriseUpdate(UpdateView):
+    model = ADDINFORMATION
+    second_model = ENTERPRISE
+    template_name = 'empresa/empresa_form.html'
+    form_class= ADDINFORMATIONFORM
+    second_form_class= ENTERPRISEFORM
+    success_url = reverse_lazy('empresa:empresa_listar')
+
+
+    def get_context_data(self, **kwargs):
+        context = super(EnterpriseUpdate,self).get_context_data(**kwargs)
+        pk = self.kwargs.get('pk',0)
+        addinformation=self.model.objects.get(id=pk)
+        empresa= self.second_model.objects.get(id=addinformation.client2_id)
+        if 'form' not in context:
+            context['form']=self.form_class(instance=addinformation)
+        if 'form2' not in context:
+            context['form2']=self.second_form_class(instance=empresa)
+        context['id']=pk
+        return context
+    def post(self, request, *args, **kwargs):
+        self.object=self.get_object
+        id_addinformation= kwargs['pk']
+        addinformation=self.model.objects.get(id=id_addinformation)
+        empresa=self.second_model.objects.get(id=addinformation.client2_id)
+        form=self.form_class(request.POST, instance=addinformation)
+        form2 = self.second_form_class(request.POST, instance=empresa)
+        if form.is_valid() and form2.is_valid():
+            form.save()
+            form2.save()
+            return HttpResponseRedirect(self.get_success_url())
+        else:
+            return HttpResponseRedirect(self.get_success_url())
+
+class EnterpriseDelete(DeleteView):
+
+    model = ADDINFORMATION
+    template_name ='empresa/empresa_delete.html'
+    success_url = reverse_lazy('empresa:empresa_listar')

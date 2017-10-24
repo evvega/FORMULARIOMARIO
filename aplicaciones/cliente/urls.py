@@ -6,7 +6,7 @@ urlpatterns = [
 
     url(r'^registrar',CLIENT_CREATE.as_view(),name='cliente_registrar'),
     url(r'^listar', CLIENTLIST.as_view(), name='cliente_listar'),
-    url(r'^editar/(?P<pk>\d+)/', ClientUpdate.as_view(), name='cliente_editar'),
-    url(r'^eliminar/(?P<pk>\d+)/',ClientDelete.as_view(), name='cliente_eliminar'),
+    url(r'^editar/(?P<pk>\d+)/$', ClientUpdate.as_view(), name='cliente_editar'),
+    url(r'^eliminar/(?P<pk>\d+)/$',ClientDelete.as_view(), name='cliente_eliminar'),
 
 ]

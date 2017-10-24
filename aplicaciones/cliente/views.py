@@ -82,3 +82,4 @@ class ClientDelete(DeleteView):
 
     model = ADDINFORMATION
     template_name ='cliente/cliente_delete.html'
+    success_url = reverse_lazy('cliente:cliente_listar')
