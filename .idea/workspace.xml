@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a616cc9d-958e-4c8d-a415-f4ea6c0b9289" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/cliente/forms.py" afterPath="$PROJECT_DIR$/aplicaciones/cliente/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/cliente/models.py" afterPath="$PROJECT_DIR$/aplicaciones/cliente/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/cliente/urls.py" afterPath="$PROJECT_DIR$/aplicaciones/cliente/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/cliente/views.py" afterPath="$PROJECT_DIR$/aplicaciones/cliente/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/empresa/forms.py" afterPath="$PROJECT_DIR$/aplicaciones/empresa/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/empresa/models.py" afterPath="$PROJECT_DIR$/aplicaciones/empresa/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/empresa/urls.py" afterPath="$PROJECT_DIR$/aplicaciones/empresa/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aplicaciones/empresa/views.py" afterPath="$PROJECT_DIR$/aplicaciones/empresa/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/base.html" afterPath="$PROJECT_DIR$/templates/base/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cliente/cliente_form.html" afterPath="$PROJECT_DIR$/templates/cliente/cliente_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/cliente/cliente_list.html" afterPath="$PROJECT_DIR$/templates/cliente/cliente_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/empresa/empresa_list.html" afterPath="$PROJECT_DIR$/templates/empresa/empresa_list.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,22 +27,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicaciones/empresa/forms.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-341">
-              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="648">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FORMU/settings.py">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-396">
-              <caret line="82" column="34" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="-186">
+              <caret line="6887" column="0" lean-forward="false" selection-start-line="6887" selection-start-column="0" selection-end-line="6887" selection-end-column="0" />
+              <folding>
+                <marker date="1509055528685" expanded="true" signature="26611:26613" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,11 +133,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="496" />
-    <option name="y" value="150" />
-    <option name="width" value="874" />
-    <option name="height" value="728" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="width" value="902" />
+    <option name="height" value="484" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -185,7 +173,13 @@
             <path>
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
@@ -197,18 +191,6 @@
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FORMU" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="empresa" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,7 +270,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="7" />
+    <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -599,16 +581,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108383">
-          <caret line="349" column="4" lean-forward="true" selection-start-line="349" selection-start-column="4" selection-end-line="349" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="-186">
+          <caret line="6887" column="0" lean-forward="false" selection-start-line="6887" selection-start-column="0" selection-end-line="6887" selection-end-column="0" />
+          <folding>
+            <marker date="1509055528685" expanded="true" signature="26611:26613" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="84" column="4" lean-forward="false" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
+        <state relative-caret-position="648">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -617,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
