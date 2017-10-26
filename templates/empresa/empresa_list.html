@@ -23,17 +23,17 @@
     <tbody>
     {% if object_list %}
 
-    {% for ADDINFORMATION in object_list %}
+    {% for AddInformation in object_list %}
     <tr>
-        <td>{{ ADDINFORMATION.id }}</td>
-        <td>{{ ADDINFORMATION.TYPE_WAYTOPAY }}</td>
-        <td>{{ ADDINFORMATION.TYPE_PRODUCTQUALIFICATION}}</td>
-        <td>{{ ADDINFORMATION.TYPE_SERVICEQUALIFICATION}}</td>
-        <td>{{ ADDINFORMATION.client2.BUSSINES_NAME }}</td>
-        <td>{{ ADDINFORMATION.client2.TICKET}}</td>
+        <td>{{ AddInformation.id }}</td>
+        <td>{{ AddInformation.TYPE_WAYTOPAY }}</td>
+        <td>{{ AddInformation.TYPE_PRODUCTQUALIFICATION}}</td>
+        <td>{{ AddInformation.TYPE_SERVICEQUALIFICATION}}</td>
+        <td>{{ AddInformation.client2.BUSSINES_NAME }}</td>
+        <td>{{ AddInformation.client2.TICKET}}</td>
         <td>
-            <a class="btn btn-primary" href="#">Editar</a>
-            <a class="btn btn-danger" href="#">Eliminar</a>
+            <a class="btn btn-primary" href="{% url 'empresa:empresa_editar'  AddInformation.id%}">Edit</a>
+            <a class="btn btn-danger" href="{% url 'empresa:empresa_eliminar' AddInformation.id%}">Delete</a>
         </td>
     </tr>
     {% endfor %}

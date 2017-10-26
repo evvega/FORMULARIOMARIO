@@ -3,15 +3,15 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 from django.views.generic import CreateView,UpdateView,ListView,DeleteView
-from aplicaciones.cliente.models import CLIENT,ADDINFORMATION
+from aplicaciones.cliente.models import Client,AddInformation
 from aplicaciones.cliente.forms import CLIENTFORM,ADDINFORMATIONFORM
 from django.http import HttpResponseRedirect,HttpResponse
 from django.core.urlresolvers import reverse_lazy
 
 # Create your views here.
 
-class CLIENT_CREATE(CreateView):
-    model = ADDINFORMATION
+class ClientCreate(CreateView):
+    model = AddInformation
     form_class = ADDINFORMATIONFORM
     second_form_class = CLIENTFORM
     template_name = 'cliente/cliente_form.html'
@@ -20,7 +20,7 @@ class CLIENT_CREATE(CreateView):
 
 
     def get_context_data(self, **kwargs):
-        context = super(CLIENT_CREATE,self).get_context_data(**kwargs)
+        context = super(ClientCreate,self).get_context_data(**kwargs)
         if 'form' not in context:
             context['form']= self.form_class(self.request.GET)
         if 'form2' not in context:
@@ -40,13 +40,13 @@ class CLIENT_CREATE(CreateView):
 
             return self.render_to_response(self.get_context_data(form=form,form2=form2))
 
-class CLIENTLIST(ListView):
-    model = ADDINFORMATION
+class ClientList(ListView):
+    model = AddInformation
     template_name = 'cliente/cliente_list.html'
 
 class ClientUpdate(UpdateView):
-    model = ADDINFORMATION
-    second_model = CLIENT
+    model = AddInformation
+    second_model = Client
     template_name = 'cliente/cliente_form.html'
     form_class= ADDINFORMATIONFORM
     second_form_class= CLIENTFORM
@@ -80,6 +80,7 @@ class ClientUpdate(UpdateView):
 
 class ClientDelete(DeleteView):
 
-    model = ADDINFORMATION
+    model = AddInformation
     template_name ='cliente/cliente_delete.html'
     success_url = reverse_lazy('cliente:cliente_listar')
+

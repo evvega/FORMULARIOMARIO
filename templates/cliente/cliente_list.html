@@ -24,18 +24,18 @@
     <tbody>
     {% if object_list %}
 
-    {% for ADDINFORMATION in object_list %}
+    {% for AddInformation in object_list %}
     <tr>
-        <td>{{ ADDINFORMATION.id }}</td>
-        <td>{{ ADDINFORMATION.TYPE_WAYTOPAY }}</td>
-        <td>{{ ADDINFORMATION.TYPE_PRODUCTQUALIFICATION}}</td>
-        <td>{{ ADDINFORMATION.TYPE_SERVICEQUALIFICATION}}</td>
-        <td>{{ ADDINFORMATION.client1.NAME }} {{ ADDINFORMATION.client1.SURNAMES }}
-        <td>{{ ADDINFORMATION.client1.SOCIOECONOMIC_LEVEL}}</td>
-        <td>{{ ADDINFORMATION.client1.TICKET}}</td>
+        <td>{{ AddInformation.id }}</td>
+        <td>{{ AddInformation.TYPE_WAYTOPAY }}</td>
+        <td>{{ AddInformation.TYPE_PRODUCTQUALIFICATION}}</td>
+        <td>{{ AddInformation.TYPE_SERVICEQUALIFICATION}}</td>
+        <td>{{ AddInformation.client1.NAME }} {{ AddInformation.client1.SURNAMES }}
+        <td>{{ AddInformation.client1.SOCIOECONOMIC_LEVEL}}</td>
+        <td>{{ AddInformation.client1.TICKET}}</td>
         <td>
-            <a class="btn btn-primary" href="{% url 'cliente:cliente_editar' ADDINFORMATION.id%}">Editar</a>
-            <a class="btn btn-danger" href="{% url 'cliente:cliente_eliminar' ADDINFORMATION.id%}">Eliminar</a>
+            <a class="btn btn-primary" href="{% url 'cliente:cliente_editar' AddInformation.id%}">Edit</a>
+            <a class="btn btn-danger" href="{% url 'cliente:cliente_eliminar' AddInformation.id%}">Delete</a>
         </td>
     </tr>
     {% endfor %}

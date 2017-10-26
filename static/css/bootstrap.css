@@ -232,6 +232,7 @@ th {
   tr,
   img {
     page-break-inside: avoid;
+    font-family: "URW Gothic L";
   }
   img {
     max-width: 100% !important;
@@ -2256,6 +2257,7 @@ pre code {
 }
 table {
   background-color: transparent;
+  font-family: "URW Gothic L";
 }
 caption {
   padding-top: 8px;
@@ -2270,6 +2272,7 @@ th {
   width: 100%;
   max-width: 100%;
   margin-bottom: 21px;
+  font-family: "URW Gothic L";
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2500,6 +2503,7 @@ fieldset {
   border: 0;
   min-width: 0;
   margin-top: 10px;
+  font-family: "URW Gothic L";
 }
 legend {
   display: block;
@@ -3988,7 +3992,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "URW Gothic L";
 }
 .nav > li {
   position: relative;
@@ -4200,7 +4204,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 1px;
   margin-bottom: 1px;
   border: 1px solid transparent;
-  font-family: "Montserrat",sans-serif;
+  font-family: Courier;
 }
 @media (min-width: 780px) {
   .navbar {

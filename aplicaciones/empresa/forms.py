@@ -1,11 +1,11 @@
 from django import forms
-from aplicaciones.empresa.models import ENTERPRISE, ADDINFORMATION
+from aplicaciones.empresa.models import Enterprise, AddInformation
 
 
 class ENTERPRISEFORM(forms.ModelForm):
 
     class Meta:
-        model= ENTERPRISE
+        model= Enterprise
         fields=[
             'BUSSINES_NAME',
             'NIT',
@@ -40,7 +40,7 @@ class ENTERPRISEFORM(forms.ModelForm):
 
 class ADDINFORMATIONFORM(forms.ModelForm):
     class Meta:
-        model =ADDINFORMATION
+        model =AddInformation
 
         fields = [
             'TYPE_WAYTOPAY',

@@ -7,7 +7,7 @@ from django.db import models
 
 # Create your models here.
 
-class CLIENT(models.Model):
+class Client(models.Model):
     NAME = models.CharField(max_length=50)
     SURNAMES = models.CharField(max_length=80)
     AGE = models.IntegerField()
@@ -23,8 +23,8 @@ class CLIENT(models.Model):
     def __str__(self):
         return '{}'.format(self.NAME)
 
-class ADDINFORMATION(models.Model):
-    client1 = models.ForeignKey(CLIENT, null=True, blank=True)
+class AddInformation(models.Model):
+    client1 = models.ForeignKey(Client, null=True, blank=True)
 
     WAY_TO_PAY = (('TARJETADECREDITONACIONAL', 'Tarjeta de Crédito Nacional'), ('VISA', 'Visa'), ('MASTERCARD', 'Mastercard'),
     ('AMERICANEXPRESS', 'American Express'), ('DINERS', 'Diners'), ('TARJETASDEBITO', 'Tarjetas Débito'),

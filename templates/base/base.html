@@ -11,7 +11,7 @@
         <title>{% block title %} FORMULARIO {% endblock %}</title>
         <link rel="shortcut icon" href="https://mariohernandez.vtexcommercestable.com.br/arquivos/Favicon_MH.ico?v=635822564809530000" type="image/x-icon">
 </head>
-<body>
+    <body>
         <div class="container">
             {% block navbar %}
                 <nav class="navbar navbar-inverse">
@@ -28,7 +28,7 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                       <ul class="nav navbar-nav">
-                        <li class="active"><a href="{% url 'empresa:empresa_registrar'  %}">Registro Empresa<span class="sr-only">(current)</span></a></li>
+                        <li><a href="{% url 'empresa:empresa_registrar'  %}">Registro Empresa</a></li>
                         <li><a href="{% url 'cliente:cliente_registrar'%}">Registro Cliente</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Listas </a>
@@ -64,25 +64,18 @@
 
 
 
-{%block footer%}
-<footer class="panel-footer">
+    {%block footer%}
+    <footer class="panel-footer">
 
-          <div class="footer-copyright">
-            <div class="container">
-                <center>© Todos los derechos reservados MARROQUINERA S.A. 2015</center>
+              <div class="footer-copyright">
+                <div class="container">
+                    <center>© Todos los derechos reservados MARROQUINERA S.A. 2015</center>
 
-            </div>
-          </div>
-</footer>
+                </div>
+              </div>
+    </footer>
 
-
-
-
-
-
-
-
-{% endblock %}
+    {% endblock %}
 
 
 
@@ -91,6 +84,6 @@
 
 
 
-</body>
+    </body>
 
 </html>

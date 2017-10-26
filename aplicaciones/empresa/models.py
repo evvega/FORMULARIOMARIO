@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 
-class ENTERPRISE(models.Model):
+class Enterprise(models.Model):
     BUSSINES_NAME = models.CharField(max_length=50)
     NIT = models.CharField(max_length=50)
     PHONE = models.IntegerField()
@@ -22,8 +22,8 @@ class ENTERPRISE(models.Model):
 
 
 
-class ADDINFORMATION(models.Model):
-    client2 = models.ForeignKey(ENTERPRISE, null=True, blank=True)
+class AddInformation(models.Model):
+    client2 = models.ForeignKey(Enterprise, null=True, blank=True)
 
     WAY_TO_PAY =(('TARJETADECREDITONACIONAL','Tarjeta de Crédito Nacional'),('VISA','Visa'),('MASTERCARD','Mastercard'),('AMERICANEXPRESS','American Express'),('DINERS','Diners'),('TARJETASDEBITO','Tarjetas Débito'),('CONSIGNACIONBANCARIA','Consignación Bancaria'),('PAGOSVIABALOTO','Pagos via Baloto'),('EFECTY','Efecty'))
     TYPE_WAYTOPAY = models.TextField(max_length=1,choices=WAY_TO_PAY)

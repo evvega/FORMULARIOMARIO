@@ -1,11 +1,11 @@
 from django import forms
-from aplicaciones.cliente.models import CLIENT, ADDINFORMATION
+from aplicaciones.cliente.models import Client, AddInformation
 
 
 class CLIENTFORM(forms.ModelForm):
 
     class Meta:
-        model= CLIENT
+        model= Client
         fields = [
             'NAME',
             'SURNAMES',
@@ -46,8 +46,7 @@ class CLIENTFORM(forms.ModelForm):
 
 class ADDINFORMATIONFORM(forms.ModelForm):
     class Meta:
-        model =ADDINFORMATION
-
+        model =AddInformation
         fields = [
             'TYPE_WAYTOPAY',
             'TYPE_PRODUCTQUALIFICATION',
