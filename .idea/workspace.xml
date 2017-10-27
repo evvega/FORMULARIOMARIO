@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a616cc9d-958e-4c8d-a415-f4ea6c0b9289" name="Default" comment="" />
+    <list default="true" id="a616cc9d-958e-4c8d-a415-f4ea6c0b9289" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FORMU/settings.py" afterPath="$PROJECT_DIR$/FORMU/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/base.html" afterPath="$PROJECT_DIR$/templates/base/base.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,21 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="68" column="82" lean-forward="false" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+            <state relative-caret-position="165">
+              <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1378">
-              <caret line="6979" column="1" lean-forward="false" selection-start-line="6979" selection-start-column="1" selection-end-line="6979" selection-end-column="1" />
+            <state relative-caret-position="113">
+              <caret line="6916" column="15" lean-forward="true" selection-start-line="6916" selection-start-column="15" selection-end-line="6916" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,10 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.panel-foo</find>
-      <find>.panel</find>
-      <find>.panel-footer</find>
-      <find>.container</find>
       <find>panel-foo</find>
       <find>font-family</find>
       <find>dropdown-toggle</find>
@@ -89,6 +100,10 @@
       <find>url</find>
       <find>toggl</find>
       <find>container</find>
+      <find>body</find>
+      <find>header nav ul</find>
+      <find>ul</find>
+      <find>a</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,13 +119,11 @@
         <option value="$PROJECT_DIR$/empresa/migrations/forms.py" />
         <option value="$PROJECT_DIR$/empresa/forms.py" />
         <option value="$PROJECT_DIR$/FORMU/urls.py" />
-        <option value="$PROJECT_DIR$/FORMU/settings.py" />
         <option value="$PROJECT_DIR$/templates/empresa/empresa_form.html" />
         <option value="$PROJECT_DIR$/templates/cliente/cliente_delete.html" />
         <option value="$PROJECT_DIR$/templates/empresa/empresa_delete.html" />
         <option value="$PROJECT_DIR$/aplicaciones/cliente/forms.py" />
         <option value="$PROJECT_DIR$/aplicaciones/cliente/models.py" />
-        <option value="$PROJECT_DIR$/aplicaciones/cliente/views.py" />
         <option value="$PROJECT_DIR$/aplicaciones/empresa/forms.py" />
         <option value="$PROJECT_DIR$/aplicaciones/empresa/models.py" />
         <option value="$PROJECT_DIR$/aplicaciones/empresa/views.py" />
@@ -119,9 +132,11 @@
         <option value="$PROJECT_DIR$/aplicaciones/cliente/urls.py" />
         <option value="$PROJECT_DIR$/aplicaciones/empresa/urls.py" />
         <option value="$PROJECT_DIR$/templates/empresa/empresa_list.html" />
-        <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/static/js/menu.js" />
+        <option value="$PROJECT_DIR$/FORMU/settings.py" />
+        <option value="$PROJECT_DIR$/aplicaciones/cliente/views.py" />
         <option value="$PROJECT_DIR$/templates/base/base.html" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -132,7 +147,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="4" />
+    <option name="x" value="368" />
+    <option name="y" value="169" />
     <option name="width" value="902" />
     <option name="height" value="484" />
   </component>
@@ -177,7 +193,7 @@
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
@@ -268,10 +284,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
+    <frame x="-4" y="0" width="1374" height="736" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1689394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275563" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.50569105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -312,7 +328,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -472,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aplicaciones/cliente/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="82" column="26" lean-forward="false" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aplicaciones/cliente/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -550,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2397">
           <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicaciones/empresa/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -596,33 +597,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FORMU/settings.py">
+    <entry file="file://$PROJECT_DIR$/aplicaciones/empresa/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="82" column="34" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        <state relative-caret-position="-28">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/menu.js">
+    <entry file="file://$PROJECT_DIR$/FORMU/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="292">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/aplicaciones/cliente/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1378">
-          <caret line="6979" column="1" lean-forward="false" selection-start-line="6979" selection-start-column="1" selection-end-line="6979" selection-end-column="1" />
+        <state relative-caret-position="352">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="68" column="82" lean-forward="false" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+        <state relative-caret-position="165">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="6916" column="15" lean-forward="true" selection-start-line="6916" selection-start-column="15" selection-end-line="6916" selection-end-column="15" />
           <folding />
         </state>
       </provider>
