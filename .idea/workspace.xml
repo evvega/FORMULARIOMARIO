@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a616cc9d-958e-4c8d-a415-f4ea6c0b9289" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/static/fonts/icomoon.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/static/fonts/icomoon.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/static/fonts/icomoon.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/menu.js" afterPath="$PROJECT_DIR$/static/js/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts.css" afterPath="$PROJECT_DIR$/static/fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/static/fonts/icomoon.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/base.html" afterPath="$PROJECT_DIR$/templates/base/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+            <state relative-caret-position="247">
+              <caret line="33" column="77" lean-forward="false" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="3075" column="2" lean-forward="false" selection-start-line="3075" selection-start-column="2" selection-end-line="3075" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -54,9 +68,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-family</find>
       <find>dropdown-toggle</find>
-      <find>dropdown</find>
       <find>btn-primary</find>
       <find>btn</find>
       <find>navbar</find>
@@ -81,9 +93,11 @@
       <find>container</find>
       <find>body</find>
       <find>header nav ul</find>
-      <find>ul</find>
       <find>a</find>
       <find>a:hover</find>
+      <find>dropdown</find>
+      <find>ul</find>
+      <find>..btn-default</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,8 +128,8 @@
         <option value="$PROJECT_DIR$/templates/empresa/empresa_list.html" />
         <option value="$PROJECT_DIR$/FORMU/settings.py" />
         <option value="$PROJECT_DIR$/aplicaciones/cliente/views.py" />
-        <option value="$PROJECT_DIR$/templates/base/base.html" />
         <option value="$PROJECT_DIR$/static/js/menu.js" />
+        <option value="$PROJECT_DIR$/templates/base/base.html" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.css" />
       </list>
     </option>
@@ -126,9 +140,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="547" />
-    <option name="width" value="823" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-144" />
+    <option name="y" value="55" />
+    <option name="width" value="1138" />
     <option name="height" value="677" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -172,7 +187,7 @@
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
               <item name="FORMU" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FORMU" type="b2602c69:ProjectViewProjectNode" />
@@ -269,10 +284,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
+    <frame x="-144" y="55" width="1138" height="677" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1689394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20571956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275563" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.50569105" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -603,15 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="177" column="13" lean-forward="false" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,8 +631,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state relative-caret-position="247">
+          <caret line="33" column="77" lean-forward="false" selection-start-line="33" selection-start-column="77" selection-end-line="33" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="3075" column="2" lean-forward="false" selection-start-line="3075" selection-start-column="2" selection-end-line="3075" selection-end-column="2" />
           <folding />
         </state>
       </provider>

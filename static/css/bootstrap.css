@@ -3071,6 +3071,9 @@ fieldset[disabled] a.btn {
   color: #ffffff;
   background-color: #d6b020;
   border-color: #c8a41e;
+  width: 180px;
+  height: 40px;
+  
 }
 .btn-default:focus,
 .btn-default.focus {
@@ -3089,6 +3092,7 @@ fieldset[disabled] a.btn {
   color: #ffffff;
   background-color: #f1c622;
   border-color: #c8a41e;
+
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3128,6 +3132,8 @@ fieldset[disabled] .btn-default.focus {
   color: #ffffff;
   background-color: #450005;
   border-color: #450005;
+  width: 180px;
+  height: 40px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -6922,6 +6928,8 @@ header nav ul li a {
 	padding:20px;
 	display:block;
 	text-decoration:none;
+    font-family: Helvetica;
+    font-size: 17.5px;
 
 }
 header nav ul li span {
@@ -6953,6 +6961,8 @@ section {
     display: block;
     float: none;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
+    font-family: Helvetica;
+    font-size: 30px;
   }
 
   .menu_bar {
