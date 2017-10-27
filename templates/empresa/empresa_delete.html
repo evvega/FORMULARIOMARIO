@@ -6,7 +6,7 @@
     {% csrf_token %}
     <h3>¿Desea eliminar la información de {{ object.client2.BUSSINES_NAME}}?</h3>
     <BUTTON class="btn btn-danger" type="submit">Si,ELIMINAR</BUTTON>
-    <a class="btn btn-default"  href="{% url 'empresa:empresa_listar' %}"> Cancelar </a>
+    <a class="btn btn-default"  href="{% url 'cliententerprise:empresa_listar' %}"> Cancelar </a>
 </form>
 
 

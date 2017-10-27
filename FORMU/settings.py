@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'aplicaciones.cliente',
-    'aplicaciones.empresa',
+    'aplicaciones.clientt',
+    'aplicaciones.cliententerprise',
 
 
 ]
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'FORMU.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'postgres',
+        'NAME':'formularioclientes',
         'USER':'postgres',
         'PASSWORD':'postgres',
         'HOST':'localhost',

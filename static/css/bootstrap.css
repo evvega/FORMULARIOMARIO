@@ -3069,7 +3069,7 @@ fieldset[disabled] a.btn {
 }
 .btn-default {
   color: #ffffff;
-  background-color: #d6b020;
+  background-color: #a8881c;
   border-color: #c8a41e;
   width: 180px;
   height: 40px;
@@ -3078,13 +3078,13 @@ fieldset[disabled] a.btn {
 .btn-default:focus,
 .btn-default.focus {
   color: #ffffff;
-  background-color: #f1c622;
-  border-color: #9c7b1c;
+  background-color: #a8881c;
+  border-color: #bf9a20;
 }
 .btn-default:hover {
   color: #ffffff;
-  background-color: #f1c622;
-  border-color: #c8a41e;
+  background-color: #bf9a20;
+  border-color: #bf9a20;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3130,21 +3130,21 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #450005;
-  border-color: #450005;
+  background-color: rgb(38, 0, 5);
+  border-color: #290003;
   width: 180px;
   height: 40px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
-  background-color: #6c0008;
-  border-color: #6c0008;
+  background-color: #340004;
+  border-color: #450008;
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #6c0008;
-  border-color: #6c0008;
+  background-color: #340004;
+  border-color: #340004;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -6906,7 +6906,7 @@ header nav {
 	width:100%;
 	max-width:10000px;
 	margin:0px auto;
-	background: #2b0003;
+	background: #251206;
 }
 
 .menu_bar {
@@ -6974,7 +6974,7 @@ section {
   .menu_bar .bt-menu {
     display: block;
     padding: 20px;
-    background: #2b0003;
+    background: #251206;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
