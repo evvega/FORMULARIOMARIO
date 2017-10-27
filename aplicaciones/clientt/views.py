@@ -80,7 +80,7 @@ class ClientUpdate(UpdateView):
 
 class ClientDelete(DeleteView):
 
-    model = AddInformation
+    model = Client
     template_name ='cliente/cliente_delete.html'
     success_url = reverse_lazy('clientt:cliente_listar')
 

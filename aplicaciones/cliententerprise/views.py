@@ -77,6 +77,6 @@ class EnterpriseUpdate(UpdateView):
 
 class EnterpriseDelete(DeleteView):
 
-    model = AddInformation
+    model = Enterprise
     template_name ='empresa/empresa_delete.html'
     success_url = reverse_lazy('cliententerprise:empresa_listar')

@@ -24,7 +24,7 @@ class Enterprise(models.Model):
 
 class AddInformation(models.Model):
 
-    client2 = models.ForeignKey(Enterprise, null=True, blank=True)
+    client2 = models.ForeignKey(Enterprise,on_delete=models.CASCADE, null=True, blank=True)
     WAY_TO_PAY =(('TARJETADECREDITONACIONAL','Tarjeta de Crédito Nacional'),('VISA','Visa'),('MASTERCARD','Mastercard'),('AMERICANEXPRESS','American Express'),('DINERS','Diners'),('TARJETASDEBITO','Tarjetas Débito'),('CONSIGNACIONBANCARIA','Consignación Bancaria'),('PAGOSVIABALOTO','Pagos via Baloto'),('EFECTY','Efecty'))
     TYPE_WAYTOPAY = models.TextField(max_length=1,choices=WAY_TO_PAY)
     PRODUCT_QUALIFICATION = (('5','Excelente'),('3','Promedio'),('1','Terrible'))

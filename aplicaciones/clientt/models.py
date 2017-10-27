@@ -24,7 +24,8 @@ class Client(models.Model):
         return '{}'.format(self.NAME)
 
 class AddInformation(models.Model):
-    client1 = models.ForeignKey(Client, null=True, blank=True)
+
+    client1 = models.ForeignKey(Client, on_delete=models.CASCADE,null=True , blank=True)
 
     WAY_TO_PAY = (('TARJETADECREDITONACIONAL', 'Tarjeta de Crédito Nacional'), ('VISA', 'Visa'), ('MASTERCARD', 'Mastercard'),
     ('AMERICANEXPRESS', 'American Express'), ('DINERS', 'Diners'), ('TARJETASDEBITO', 'Tarjetas Débito'),
