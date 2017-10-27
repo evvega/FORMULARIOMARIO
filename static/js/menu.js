@@ -4,7 +4,7 @@ var contador = 1;
 
 function main(){
 	$('.menu_bar').click(function(){
-		// $('nav').toggle();
+		//$('nav').toggle();
 
 		if(contador == 1){
 			$('nav').animate({
@@ -18,6 +18,18 @@ function main(){
 			});
 		}
 
+
 	});
+	window.onscroll = function (){
+
+		if(contador==0){
+		contador = 1;
+		$('nav').animate({
+		left: '-100%'
+		});
+		}
+		}
 
 };
+
+

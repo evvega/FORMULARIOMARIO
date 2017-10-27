@@ -55,7 +55,6 @@ a {
 }
 a:active,
 a:hover {
-  outline: 0;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -176,6 +175,7 @@ fieldset {
   border: 1px solid #c0c0c0;
   margin: 30px 20px;
   padding: 0.35em 0.625em 0.75em;
+  z-index: 1;
 }
 legend {
   border: 0px;
@@ -1111,8 +1111,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #e22620;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;
@@ -6915,6 +6914,7 @@ header nav ul {
 
 header nav ul li {
 	float:left;
+    z-index: 20;
 }
 
 header nav ul li a {
@@ -6930,7 +6930,9 @@ header nav ul li span {
 }
 
 header nav ul li a:hover {
-	background: rgba(43, 0, 3, 0.83);
+	background: rgba(255, 255, 255, 0.1);
+    z-index: 2;
+
 }
 
 section {
@@ -6940,7 +6942,7 @@ section {
 
 @media screen and (max-width:1000px ) {
   header nav {
-    width: 100%;
+    width: 38.5%;
     height: 100%;
     left: -100%;
     margin: 0;

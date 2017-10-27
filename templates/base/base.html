@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'fonts.css' %}">
         <link rel="shortcut icon" href="https://mariohernandez.vtexcommercestable.com.br/arquivos/Favicon_MH.ico?v=635822564809530000" type="image/x-icon">
-        <script rel="script" href="{% static 'js/menu.js' %}"></script>
-        <script rel="script" href="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="{% static 'js/menu.js' %}"></script>
+
         <title>{% block title %} FORMULARIO {% endblock %}</title>
 
 </head>
@@ -68,7 +68,8 @@
 
 
 
-
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
     </body>
 
 </html>
