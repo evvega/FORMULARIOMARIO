@@ -32,8 +32,8 @@
         <td>{{ AddInformation.client2.BUSSINES_NAME }}</td>
         <td>{{ AddInformation.client2.TICKET}}</td>
         <td>
-            <a class="btn btn-primary" href="{% url 'empresa:empresa_editar'  AddInformation.id%}">Edit</a>
-            <a class="btn btn-danger" href="{% url 'empresa:empresa_eliminar' AddInformation.id%}">Delete</a>
+            <a class="btn btn-primary" href="{% url 'cliententerprise:empresa_editar'  AddInformation.id%}">Edit</a>
+            <a class="btn btn-danger" href="{% url 'cliententerprise:empresa_eliminar' AddInformation.id%}">Delete</a>
         </td>
     </tr>
     {% endfor %}
